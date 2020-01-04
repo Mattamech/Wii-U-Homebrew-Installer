@@ -1,4 +1,3 @@
-cd C:\homebrew
 curl https://github.com/dimok789/homebrew_launcher/releases/download/v1.3/homebrew_launcher.v1.3.zip --output homebrew_launcher.zip
 curl https://wiiubru.com/appstore/zips/appstore.zip --output appstore.zip
 curl https://wiiubru.com/appstore/zips/wuphax.zip --output wuphax.zip

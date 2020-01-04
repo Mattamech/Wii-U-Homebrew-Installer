@@ -5,4 +5,5 @@ curl https://wiiubru.com/appstore/zips/wuphax.zip --output wuphax.zip
 curl https://wiiubru.com/appstore/zips/mocha_fshax.zip --output mocha.zip
 curl https://bootmii.org/get.php?file=hackmii_installer_v1.2.zip&key=51560c13f240e84fc9d3866c5b128d061fdfd657 --output hackmii_istaller.zip
 curl http://stahlworks.com/dev/unzip.exe --output unzip.exe
+pause
 exit

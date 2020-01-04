@@ -1,0 +1,3 @@
+unzip *zip
+pause
+exit

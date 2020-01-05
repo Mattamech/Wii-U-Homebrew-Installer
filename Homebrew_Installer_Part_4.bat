@@ -3,6 +3,6 @@ del /f *.exe
 del /f *.bat
 pause
 cd C:\homebrew
-start C:\homebrew
-del /f *.bat
-pause
+curl (Part 5)
+start C:\homebrew\Homebrew_Installer_Part_5.bat
+exit

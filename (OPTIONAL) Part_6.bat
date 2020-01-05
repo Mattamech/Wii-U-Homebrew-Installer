@@ -1,3 +1,2 @@
-del /f C:\homebrew
-pause
+RD /S /Q C:\homebrew
 exit

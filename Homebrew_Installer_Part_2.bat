@@ -6,5 +6,5 @@ curl https://wiiubru.com/appstore/zips/haxchi.zip --output haxchi.zip
 curl http://stahlworks.com/dev/unzip.exe --output unzip.exe
 curl https://raw.githubusercontent.com/Mattamech/Wii-U-Homebrew-Installer/master/Homebrew_Installer_Part_3.bat --output Homebrew_Installer_Part_3.bat
 pause
-start C:\homebrew\\sd\Homebrew_Installer_Part_3.bat
+start C:\homebrew\sd\Homebrew_Installer_Part_3.bat
 exit

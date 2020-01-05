@@ -3,6 +3,7 @@ curl https://github.com/dimok789/homebrew_launcher/releases/download/v1.3/homebr
 curl https://wiiubru.com/appstore/zips/appstore.zip --output appstore.zip
 curl https://wiiubru.com/appstore/zips/mocha_fshax.zip --output mocha.zip
 curl https://wiiubru.com/appstore/zips/haxchi.zip --output haxchi.zip
+curl https://wiiubru.com/appstore/zips/cbhc.zip --output cbhc.zip
 curl http://stahlworks.com/dev/unzip.exe --output unzip.exe
 curl https://raw.githubusercontent.com/Mattamech/Wii-U-Homebrew-Installer/master/Homebrew_Installer_Part_3.bat --output Homebrew_Installer_Part_3.bat
 pause

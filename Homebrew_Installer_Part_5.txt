@@ -1,0 +1,8 @@
+cd C:\homebrew\sd
+del /f *.bat
+Xcopy /E /I C:\homebrew\sd (Place location of ROOT of your sd card here)
+pause
+cd C:\homebrew
+start C:\homebrew
+del /f *bat
+pause

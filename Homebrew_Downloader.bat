@@ -17,6 +17,7 @@ pause
 del /f *.zip
 del /f *.json
 del /f *.install
+del /f *.png
 cd C:\homebrew
 pause
 cd C:\homebrew\sd

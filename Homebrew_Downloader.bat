@@ -23,6 +23,6 @@ cd C:\homebrew\sd
 del /f *.exe
 pause
 cd C:\homebrew
-curl https://raw.githubusercontent.com/Mattamech/Wii-U-Homebrew-Installer/master/Homebrew_Installer_Part_5.txt --output Homebrew_Installer_Part_5.txt
-start C:\homebrew\Homebrew_Installer_Part_5.txt
+curl https://raw.githubusercontent.com/Mattamech/Wii-U-Homebrew-Installer/Version-2/Homebrew_Installer.txt --output Homebrew_Installer.txt
+start C:\homebrew\Homebrew_Installer.txt
 exit

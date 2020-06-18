@@ -13,6 +13,7 @@ wget.download('https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/downloa
 input("Double Check that downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
 os.system('cmd /c downloader.bat')
+os.system('cmd /c unzip *zip')
 os.system('cmd /c del /f *.zip')
 os.system('cmd /c del /f *.install')
 os.system('cmd /c del /f *.png')

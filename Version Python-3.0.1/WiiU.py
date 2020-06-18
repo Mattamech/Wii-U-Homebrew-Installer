@@ -18,6 +18,8 @@ os.system('cmd /c del /f *.zip')
 os.system('cmd /c del /f *.install')
 os.system('cmd /c del /f *.png')
 os.system('cmd /c del /f *.json')
+os.system('cmd /c del /f *.exe')
+os.system('cmd /c del /f *.bat')
 
 Save_Location = input("Enter a folder NOT created yet (EX: copy_to_sd) here:")
 shutil.copytree(Download_Location, Save_Location)

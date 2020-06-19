@@ -19,7 +19,6 @@ os.system('cmd /c del /f *.install')
 os.system('cmd /c del /f *.png')
 os.system('cmd /c del /f *.json')
 os.system('cmd /c del /f *.exe')
-os.system('cmd /c copier.bat')
 os.system('cmd /c del /f *.bat')
 
 Save_Location = input("Enter Drive letter (ex G:) here:")

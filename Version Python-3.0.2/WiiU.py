@@ -20,6 +20,7 @@ os.system('cmd /c del /f *.png')
 os.system('cmd /c del /f *.json')
 os.system('cmd /c del /f *.exe')
 wget.download('https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/copier.bat', 'copier.bat')
+os.system('cmd /c copier.bat')
 os.system('cmd /c del /f *.bat')
 
 Save_Location = input("Enter a folder NOT created yet (EX: copy_to_sd) here:")

@@ -1,5 +1,4 @@
 import wget
-from shutil import copyfile
 import os
 import shutil
 

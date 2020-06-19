@@ -19,7 +19,6 @@ os.system('cmd /c del /f *.install')
 os.system('cmd /c del /f *.png')
 os.system('cmd /c del /f *.json')
 os.system('cmd /c del /f *.exe')
-wget.download('https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/copier.bat', 'copier.bat')
 os.system('cmd /c copier.bat')
 os.system('cmd /c del /f *.bat')
 

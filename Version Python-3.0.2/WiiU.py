@@ -21,6 +21,8 @@ os.system('cmd /c del /f *.json')
 os.system('cmd /c del /f *.exe')
 os.system('cmd /c del /f *.bat')
 
+os.mkdir('copy_to_sd')
+
 Save_Location = input("Enter Drive letter (ex G:) here:")
 shutil.move('copy_to_sd\cbhc', Save_Location)
 shutil.move('copy_to_sd\haxchi', Save_Location)

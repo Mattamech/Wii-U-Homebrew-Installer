@@ -10,6 +10,9 @@ input("If the folder above is not correct you will have to restart. Press enter 
 
 wget.download('https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/downloader.bat', 'downloader.bat')
 
+clear = lambda: os.system('cls')
+clear()
+
 input("Double Check that downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
 os.system('cmd /c downloader.bat')

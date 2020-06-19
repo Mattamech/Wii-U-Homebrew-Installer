@@ -23,8 +23,8 @@ wget.download('https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/copier.
 os.system('cmd /c copier.bat')
 os.system('cmd /c del /f *.bat')
 
-Save_Location = input("Enter a folder NOT created yet (EX: copy_to_sd) here:")
-shutil.copytree(Download_Location, Save_Location)
+Save_Location = input("Enter Drive letter (ex G:) here:")
+shutil.move('copy_to_sd', Save_Location)
 
 input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
 exit()

@@ -25,6 +25,8 @@ os.system('cmd /c del /f *.bat')
 
 Save_Location = input("Enter Drive letter (ex G:) here:")
 shutil.move('copy_to_sd\cbhc', Save_Location)
+shutil.move('copy_to_sd\haxchi', Save_Location)
+shutil.move('copy_to_sd\wiiu', Save_Location)
 
 input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
 exit()

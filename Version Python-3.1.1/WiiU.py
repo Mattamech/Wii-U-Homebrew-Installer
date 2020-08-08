@@ -1,4 +1,3 @@
-import wget
 import os
 import shutil
 
@@ -7,10 +6,14 @@ os.chdir(Download_Location)
 print(os.getcwd())
 input("If the folder above is not correct you will have to restart. Press enter to continue.")
 
-wget.download('https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/downloader.bat', 'downloader.bat')
-
-clear = lambda: os.system('cls')
-clear()
+wiiu_downloader = open('wiiu_downloader.bat','w')
+wiiu_downloader.write('curl http://wiiubru.com/appstore/zips/homebrew_launcher.zip --output homebrew_launcher.zip\n')
+wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/appstore.zip --output appstore.zip\n')
+wiiu_downloader.wirte('curl https://wiiubru.com/appstore/zips/mocha_fshax.zip --output mocha.zip\n')
+wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/haxchi.zip --output haxchi.zip\n')
+wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/cbhc.zip --output cbhc.zip\n')
+wiiu_downloader.write('curl http://stahlworks.com/dev/unzip.exe --output unzip.exe')
+wiiu_downloader.close()
 
 input("Double Check that downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
@@ -29,9 +32,15 @@ shutil.copytree('haxchi', 'copy_to_sd\haxchi')
 shutil.copytree('wiiu', 'copy_to_sd\wiiu')
 
 Save_Location = input("Enter Drive letter (ex G:) here:")
-shutil.move('copy_to_sd\cbhc', Save_Location)
-shutil.move('copy_to_sd\haxchi', Save_Location)
-shutil.move('copy_to_sd\wiiu', Save_Location)
+wiiu_copier = open('wiiu_copier.bat','w')
+wiiu_copier.write('Xcopy /E /I copy_to_sd ')
+wiiu_copier.write(Save_Location)
+wiiu_copier.close()
+os.system('cmd /c wiiu_copier.bat')
+os.system('cmd /c RD /S /Q cbhc')
+os.system('cmd /c RD /S /Q haxchi')
+os.system('cmd /c RD /S /Q wiiu')
+os.system('cmd /c del /f *.bat')
 
 input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
 exit()

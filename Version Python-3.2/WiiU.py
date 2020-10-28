@@ -1,6 +1,8 @@
 import os
 import shutil
 
+Program_Location = os.getcwd()
+
 Download_Location = input("Enter folder here:")
 os.chdir(Download_Location)
 print(os.getcwd())
@@ -42,5 +44,23 @@ os.system('cmd /c RD /S /Q haxchi')
 os.system('cmd /c RD /S /Q wiiu')
 os.system('cmd /c del /f *.bat')
 
-input("If you followed the directions correctly the files should be in the root of the sd card. Press enter to exit.")
-exit()
+run_copier = input("Do you wish to either [1]run the copier,\n[2]delete the copy_to_sd folder,\n[3]or just exit?\n")
+if run_copier == "1":
+    os.chdir(Program_Location)
+    os.system('cmd /c curl https://mattamech.github.io/Wii-U-Homebrew-Installer/python/Copier.py -o Copier.py')
+    os.system('cmd /c py Copier.py')
+    exit()
+if run_copier == "2":
+    os.chdir(Program_Location)
+    delete = open('Delete.bat','w')
+    delete.write('RD /S /Q ')
+    delete.write(Download_Location)
+    delete.close()
+    os.system('cmd /c Delete.bat')
+    os.system('cmd /c del /f Delete.bat')
+    exit()
+elif run_copier == "3":
+    exit()
+else:
+    input("Whoops! That wasn't supposed to happen! Press enter to exit.")
+    exit()

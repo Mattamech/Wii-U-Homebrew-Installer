@@ -8,6 +8,10 @@ os.chdir(Download_Location)
 print(os.getcwd())
 input("If the folder above is not correct you will have to restart. Press enter to continue.")
 
+if os.path.isdir('copy_to_sd') == False:
+    input("copy_to_sd does not exist here! Press enter to exit and next time, enter the correct folder.")
+    exit()
+
 Save_Location = input("Enter Drive letter (ex G:) here:")
 wiiu_copier = open('wiiu_copier.bat','w')
 wiiu_copier.write('Xcopy /E /I copy_to_sd ')

@@ -50,7 +50,6 @@ if run_copier == "1":
     os.system('cmd /c py Copier.py')
     exit()
 if run_copier == "2":
-    os.chdir(Program_Location)
     delete = open('Delete.bat','w')
     delete.write('cd ')
     delete.write(Download_Location)

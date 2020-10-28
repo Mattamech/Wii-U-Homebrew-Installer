@@ -16,7 +16,7 @@ wiiu_copier.close()
 os.system('cmd /c wiiu_copier.bat')
 os.system('cmd /c del /f *.bat')
 
-rerun = input("Do you wish to [1]rerun the script,\n[2]delete the copy-to-sd folder,\n[3]or just exit?\nEnter the number that matches your choice.\n")
+rerun = input("Do you wish to\n[1]rerun the script,\n[2]delete the copy-to-sd folder,\n[3]or just exit?\nEnter the number that matches your choice.\n")
 if rerun == "1":
     os.chdir(Program_Location)
     os.system('cmd /c py Copier.py')

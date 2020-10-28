@@ -59,7 +59,7 @@ if run_copier == "1":
     os.system('cmd /c curl https://mattamech.github.io/Wii-U-Homebrew-Installer/docs/python/Copier.py -o Copier.py')
     os.system('cmd /c py Copier.py')
     exit()
-if run_copier == "2":
+elif run_copier == "2":
     os.system('cmd /c RD /S /Q copy_to_sd')
     exit()
 elif run_copier == "3":

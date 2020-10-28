@@ -25,15 +25,7 @@ if rerun == "1":
     os.system('cmd /c py Copier.py')
     exit()
 elif rerun == "2":
-    os.chdir(Program_Location)
-    delete = open('Delete.bat','w')
-    delete.write('cd ')
-    delete.write(Download_Location)
-    delete.write('\n')
-    delete.write('RD /S /Q copy_to_sd')
-    delete.close()
-    os.system('cmd /c Delete.bat')
-    os.system('cmd /c del /f Delete.bat')
+    os.system('cmd /c RD /S /Q copy_to_sd')
     exit()
 elif rerun == "3":
     exit()

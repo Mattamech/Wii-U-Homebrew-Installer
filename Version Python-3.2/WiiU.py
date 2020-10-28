@@ -28,10 +28,15 @@ os.system('cmd /c del /f *.json')
 os.system('cmd /c del /f *.exe')
 os.system('cmd /c del /f *.bat')
 
-os.mkdir('copy_to_sd')
-shutil.copytree('cbhc', 'copy_to_sd\cbhc')
-shutil.copytree('haxchi', 'copy_to_sd\haxchi')
-shutil.copytree('wiiu', 'copy_to_sd\wiiu')
+if os.path.isdir('copy_to_sd') == True:
+    shutil.copytree('cbhc', 'copy_to_sd\cbhc')
+    shutil.copytree('haxchi', 'copy_to_sd\haxchi')
+    shutil.copytree('wiiu', 'copy_to_sd\wiiu')
+else:
+    os.mkdir('copy_to_sd')
+    shutil.copytree('cbhc', 'copy_to_sd\cbhc')
+    shutil.copytree('haxchi', 'copy_to_sd\haxchi')
+    shutil.copytree('wiiu', 'copy_to_sd\wiiu')
 
 Save_Location = input("Enter Drive letter (ex G:) here:")
 wiiu_copier = open('wiiu_copier.bat','w')

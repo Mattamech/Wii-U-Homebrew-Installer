@@ -24,9 +24,10 @@ if rerun == "1":
 elif rerun == "2":
     os.chdir(Program_Location)
     delete = open('Delete.bat','w')
-    delete.write('RD /S /Q ')
+    delete.write('cd ')
     delete.write(Download_Location)
-    delete.write('\copy-to-sd')
+    delete.write('\n')
+    delete.write('RD /S /Q copy-to-sd')
     delete.close()
     os.system('cmd /c Delete.bat')
     os.system('cmd /c del /f Delete.bat')

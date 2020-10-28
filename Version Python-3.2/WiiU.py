@@ -11,7 +11,7 @@ input("If the folder above is not correct you will have to restart. Press enter 
 wiiu_downloader = open('wiiu_downloader.bat','w')
 wiiu_downloader.write('curl http://wiiubru.com/appstore/zips/homebrew_launcher.zip --output homebrew_launcher.zip\n')
 wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/appstore.zip --output appstore.zip\n')
-wiiu_downloader.wirte('curl https://wiiubru.com/appstore/zips/mocha_fshax.zip --output mocha.zip\n')
+wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/mocha_fshax.zip --output mocha.zip\n')
 wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/haxchi.zip --output haxchi.zip\n')
 wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/cbhc.zip --output cbhc.zip\n')
 wiiu_downloader.write('curl http://stahlworks.com/dev/unzip.exe --output unzip.exe')

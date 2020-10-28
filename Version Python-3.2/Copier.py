@@ -1,6 +1,8 @@
 import shutil
 import os
 
+Program_Location = os.getcwd()
+
 Download_Location = input("Enter folder with downloaded files here:")
 os.chdir(Download_Location)
 print(os.getcwd())

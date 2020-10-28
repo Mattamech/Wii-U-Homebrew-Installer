@@ -55,7 +55,7 @@ if run_copier == "2":
     delete = open('Delete.bat','w')
     delete.write('RD /S /Q ')
     delete.write(Download_Location)
-    delete.write("\copy-to-sd")
+    delete.write('\copy-to-sd')
     delete.close()
     os.system('cmd /c Delete.bat')
     os.system('cmd /c del /f Delete.bat')

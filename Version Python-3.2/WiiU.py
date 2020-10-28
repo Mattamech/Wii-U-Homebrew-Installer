@@ -50,14 +50,7 @@ if run_copier == "1":
     os.system('cmd /c py Copier.py')
     exit()
 if run_copier == "2":
-    delete = open('Delete.bat','w')
-    delete.write('cd ')
-    delete.write(Download_Location)
-    delete.write('\n')
-    delete.write('RD /S /Q copy_to_sd')
-    delete.close()
-    os.system('cmd /c Delete.bat')
-    os.system('cmd /c del /f Delete.bat')
+    os.system('cmd /c RD /S /Q copy_to_sd')
     exit()
 elif run_copier == "3":
     exit()

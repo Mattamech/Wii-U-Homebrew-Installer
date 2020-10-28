@@ -17,9 +17,9 @@ wiiu_downloader.write('curl https://wiiubru.com/appstore/zips/cbhc.zip --output 
 wiiu_downloader.write('curl http://stahlworks.com/dev/unzip.exe --output unzip.exe')
 wiiu_downloader.close()
 
-input("Double Check that downloader.bat is now in the folder you specifyed. Press enter to continue.")
+input("Double Check that wiiu_downloader.bat is now in the folder you specifyed. Press enter to continue.")
 
-os.system('cmd /c downloader.bat')
+os.system('cmd /c wiiu_downloader.bat')
 os.system('cmd /c unzip *zip')
 os.system('cmd /c del /f *.zip')
 os.system('cmd /c del /f *.install')

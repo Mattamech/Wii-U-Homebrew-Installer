@@ -1,4 +1,7 @@
-import shutil
+#Made by Lord-Giganticus and Mattamech. Please do not repost this without crediting us! :)
+
+# Version 3.2.1
+
 import os
 
 Program_Location = os.getcwd()
@@ -22,6 +25,7 @@ os.system('cmd /c del /f *.bat')
 
 rerun = input("Do you wish to\n[1]rerun the script,\n[2]delete the copy-to-sd folder,\n[3]or just exit?\nEnter the number that matches your choice.\n")
 if rerun == "1":
+    os.chdir(Program_Location)
     os.system('cmd /c py Copier.py')
     exit()
 elif rerun == "2":

@@ -2,7 +2,7 @@
 name: Pull request
 about: Create a pull request to help us improve
 title: "[PR]"
-labels: enhancement, help wanted, 
+labels: enhancement, pull request  
 assignees: Lord-Giganticus
 
 ---

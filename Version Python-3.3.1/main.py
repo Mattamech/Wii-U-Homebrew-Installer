@@ -1,7 +1,7 @@
 #Made by Lord-Giganticus and Mattamech. Please do not repost this without crediting us! :)
 import os
 import shutil
-Version = 3.3
+Version = 3.3.1
 
 class error: # error code is from https://gist.github.com/Lord-Giganticus/db95058abbd54b198061902a4f6b6d7c
   def problem(x:int, y:int):
@@ -95,7 +95,7 @@ class main:
         except:
             error.problem(93, 95)
 
-Choice = int(input('Enter a number corresponding to which program you wish to run.\n[1]WiiU.py\n[2]Copier.py'))
+Choice = int(input('Enter a number corresponding to which program you wish to run.\n[1]WiiU.py\n[2]Copier.py\n'))
 if Choice == 1:
     main.WiiU()
     main.Complete()

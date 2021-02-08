@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# py-compiler things
+# Custom things
 py-compiler.py
 py-compiler.exe
+.vscode/
+.vs/
+bin/

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wii U Homebrew Installer", "Wii U Homebrew Installer\Wii U Homebrew Installer.csproj", "{F4A943B3-1C64-4057-A816-F6746D14C078}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4A943B3-1C64-4057-A816-F6746D14C078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A943B3-1C64-4057-A816-F6746D14C078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A943B3-1C64-4057-A816-F6746D14C078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A943B3-1C64-4057-A816-F6746D14C078}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4177EBE3-8B68-4C36-B4DD-6A7997E86DAA}
+	EndGlobalSection
+EndGlobal

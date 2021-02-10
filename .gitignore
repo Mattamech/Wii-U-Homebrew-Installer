@@ -134,3 +134,4 @@ py-compiler.exe
 .vscode/
 .vs/
 bin/
+obj/

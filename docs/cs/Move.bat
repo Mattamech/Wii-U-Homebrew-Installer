@@ -1,1 +1,1 @@
-move "wiiu" "Copy_to_SD" & move "cbhc" "Copy_to_SD" & move "haxchi" "Copy_to_SD" & del /f *.bat & exit
+move "wiiu" "Copy_to_SD" & move "cbhc" "Copy_to_SD" & tar -xf Haxchi-Installer.tar.gz & del /f *.gz & move "haxchi" "Copy_to_SD" & del /f *.bat & exit

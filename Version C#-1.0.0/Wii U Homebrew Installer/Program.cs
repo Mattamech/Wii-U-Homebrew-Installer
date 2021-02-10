@@ -21,7 +21,7 @@ namespace Wii_U_Homebrew_Installer
             using (var client = new WebClient())
                 client.DownloadFile("https://wiiubru.com/appstore/zips/cbhc.zip", "cbhc.zip");
             using (var client = new WebClient())
-                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Haxchi-Installer.zip", "Haxchi-Installer.zip");
+                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Haxchi-Installer.tar.gz", "Haxchi-Installer.tar.gz");
             using (var client = new WebClient())
                 client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Extract.bat", "Extract.bat");
             using (var client = new WebClient())
@@ -30,7 +30,7 @@ namespace Wii_U_Homebrew_Installer
                 client.DownloadFile("http://stahlworks.com/dev/unzip.exe", "unzip.exe");
             FileSystem.MkDir("Copy_to_SD");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
-            Process.Start("CMD.exe","echo hi & exit");
+            Process.Start("CMD.exe","/c start Extract.bat");
         }
     }
 }

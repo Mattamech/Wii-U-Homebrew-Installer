@@ -3,6 +3,7 @@ using System.Net;
 using System.Diagnostics;
 using System.IO;
 using System;
+using System.Threading;
 
 namespace Wii_U_Homebrew_Installer
 {
@@ -10,6 +11,7 @@ namespace Wii_U_Homebrew_Installer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Downloading files.");
             using (var client = new WebClient())
                 client.DownloadFile("http://wiiubru.com/appstore/zips/homebrew_launcher.zip", "homebrew_launcher.zip");
             using (var client = new WebClient())
@@ -30,7 +32,16 @@ namespace Wii_U_Homebrew_Installer
                 client.DownloadFile("http://stahlworks.com/dev/unzip.exe", "unzip.exe");
             FileSystem.MkDir("Copy_to_SD");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
+            Console.WriteLine("Running .bat files.");
             Process.Start("CMD.exe","/c start Extract.bat");
+            Console.WriteLine("Enter the drive you want to copy the files to:");
+            string drive = Console.ReadLine();
+            string strCmdText;
+            strCmdText = "/C cd Copy_to_SD & move wiiu "+drive+" & move haxchi "+drive+" & move cbhc "+drive+" & exit";
+            Process.Start("CMD.exe", strCmdText);
+            Console.WriteLine("Complete. Exiting.");
+            Thread.Sleep(5000);
+            Environment.Exit(0);
         }
     }
 }

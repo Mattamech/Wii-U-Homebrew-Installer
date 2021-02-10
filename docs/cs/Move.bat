@@ -1,1 +1,1 @@
-move "wiiu" "Copy_to_SD" & move "cbhc" "Copy_to_SD" & move "haxchi" "Copy_to_SD" & exit
+move "wiiu" "Copy_to_SD" & move "cbhc" "Copy_to_SD" & move "haxchi" "Copy_to_SD" & del /f *.bat & exit

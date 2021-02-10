@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Copier
 {
-    class Copier
+    class Program
     {
         static void Main(string[] args)
         {

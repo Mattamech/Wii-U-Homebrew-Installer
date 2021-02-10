@@ -11,7 +11,14 @@ namespace Wii_U_Homebrew_Installer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Downloading files.");
+            if (Directory.Exists("Copy_to_SD"))
+            {
+                Console.WriteLine("Copy_to_SD folder dectected. Running Copier.exe");
+                Thread.Sleep(2000);
+                Process.Start("Copier.exe");
+                Environment.Exit(3);
+            }
+                Console.WriteLine("Downloading files.");
             using (var client = new WebClient())
                 client.DownloadFile("http://wiiubru.com/appstore/zips/homebrew_launcher.zip", "homebrew_launcher.zip");
             using (var client = new WebClient())
@@ -37,7 +44,7 @@ namespace Wii_U_Homebrew_Installer
             Console.WriteLine("Enter the drive you want to copy the files to:");
             string drive = Console.ReadLine();
             string strCmdText;
-            strCmdText = "/C cd Copy_to_SD & move wiiu "+drive+" & move haxchi "+drive+" & move cbhc "+drive+" & exit";
+            strCmdText = "/c cd Copy_to_SD & move wiiu "+drive+" & move haxchi "+drive+" & move cbhc "+drive+" & exit";
             Process.Start("CMD.exe", strCmdText);
             Console.WriteLine("Complete. Exiting.");
             Thread.Sleep(5000);

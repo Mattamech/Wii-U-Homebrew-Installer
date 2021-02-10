@@ -1,1 +1,1 @@
-unzip *zip & del /f *.zip & del /f *.install & del /f *.png & del /f *.json & RD /S /Q haxchi
+mkdir temp_dir & move Haxchi-Installer.zip temp_dir & unzip *zip & del /f *.zip & del /f *.install & del /f *.png & del /f *.json & RD /S /Q haxchi & cd temp_dir & move Haxchi-Intaller.zip ../ & cd ../ & RD /S /Q temp_dir & unzip *zip & del /f unzip.exe & del /f *.zip & start Move.bat & exit

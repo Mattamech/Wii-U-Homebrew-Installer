@@ -1,0 +1,16 @@
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\Wii U Homebrew Installer.exe
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\Wii U Homebrew Installer.deps.json
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\Wii U Homebrew Installer.runtimeconfig.json
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\Wii U Homebrew Installer.runtimeconfig.dev.json
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\Wii U Homebrew Installer.dll
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\ref\Wii U Homebrew Installer.dll
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\bin\Debug\net5.0\Wii U Homebrew Installer.pdb
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.csprojAssemblyReference.cache
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.AssemblyInfoInputs.cache
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.AssemblyInfo.cs
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.dll
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\ref\Wii U Homebrew Installer.dll
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.pdb
+C:\Users\Matt\Documents\Python\Wii-U-Homebrew-Installer\Version C#-1.0.0\Wii U Homebrew Installer\obj\Debug\net5.0\Wii U Homebrew Installer.genruntimeconfig.cache

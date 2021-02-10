@@ -19,11 +19,17 @@ namespace Wii_U_Homebrew_Installer
             using (var client = new WebClient())
                 client.DownloadFile("https://wiiubru.com/appstore/zips/cbhc.zip", "cbhc.zip");
             using (var client = new WebClient())
-                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Haxchi-Installer.zip", "Haxchi-Installer.zip");
-            using (var client = new WebClient())
                 client.DownloadFile("http://stahlworks.com/dev/unzip.exe", "unzip.exe");
-            Process.Start("CMD.exe", "unzip *zip & del /f *.zip & del /f *.install & del /f *.png & del /f *.json & del /f *.exe");
             FileSystem.MkDir("Copy_to_SD");
+            using (var client = new WebClient())
+                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Extract.bat", "Extract.bat");
+            Process.Start("CMD.exe", "/C start Extract.bat");
+            using (var client = new WebClient())
+                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Move.bat", "Move.bat");
+            Process.Start("CMD.exe", "/C start Move.bat");
+            using (var client = new WebClient())
+                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Haxchi-Installer.zip", "Haxchi-Installer.zip");
+            Process.Start("CMD.exe", "/C unzip Haxchi-Installer.zip");
         }
     }
 }

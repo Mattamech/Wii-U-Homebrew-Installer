@@ -8,7 +8,7 @@ namespace Wii_U_Homebrew_Installer
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             if (Directory.Exists("Copy_to_SD"))
             {
@@ -28,15 +28,14 @@ namespace Wii_U_Homebrew_Installer
                 client.DownloadFile("https://wiiubru.com/appstore/zips/haxchi.zip", "haxchi.zip");
                 client.DownloadFile("https://wiiubru.com/appstore/zips/cbhc.zip", "cbhc.zip");
                 client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Haxchi-Installer.tar.gz", "Haxchi-Installer.tar.gz");
-                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Extract.bat", "Extract.bat");
-                client.DownloadFile("https://mattamech.github.io/Wii-U-Homebrew-Installer/cs/Move.bat", "Move.bat");
                 client.DownloadFile("http://stahlworks.com/dev/unzip.exe", "unzip.exe");
                 client.DownloadFile("http://stahlworks.com/dev/tar.exe", "tar.exe");
             }
             Directory.CreateDirectory("Copy_to_SD");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Console.WriteLine("Running .bat files.");
-            Process.Start("CMD.exe", "/c start Extract.bat").WaitForExit();
+            Extractor.Extract();
+            Mover.Move();
             Copier:
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Console.WriteLine("Enter the drive you want to copy the files to:");

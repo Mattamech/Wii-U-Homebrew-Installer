@@ -42,11 +42,11 @@ namespace Wii_U_Homebrew_Installer
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Console.WriteLine("Running .bat files.");
             Process.Start("CMD.exe", "/c start Extract.bat").WaitForExit();
-        Copier:
+            Copier:
+            Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Console.WriteLine("Enter the drive you want to copy the files to:");
             string drive = Console.ReadLine();
-            Environment.CurrentDirectory = Directory.GetCurrentDirectory();
-            Process process = Process.Start("CMD.exe", "/c robocopy /E Copy_to_SD "+drive+" & exit");
+            Process process = Process.Start("CMD.exe", "/c robocopy /E Copy_to_SD \"" + drive + "\"");
             process.WaitForExit();
             Console.WriteLine("Complete. Exiting.");
             Thread.Sleep(5000);

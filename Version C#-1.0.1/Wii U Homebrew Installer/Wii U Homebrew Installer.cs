@@ -42,15 +42,11 @@ namespace Wii_U_Homebrew_Installer
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Console.WriteLine("Running .bat files.");
             Process.Start("CMD.exe", "/c start Extract.bat").WaitForExit();
-            Copier:
+        Copier:
             Console.WriteLine("Enter the drive you want to copy the files to:");
             string drive = Console.ReadLine();
-            using (FileStream fs = File.Create("xcopy.bat")) //This to line 51 are from the answer in https://social.msdn.microsoft.com/Forums/vstudio/en-US/41a153ec-e9bc-4a85-a2b4-9d55dc00fef8/creating-a-batch-file-using-c-to-update-a-database-in-sql-server-2005?forum=netfxbcl
-                fs.Close();
-            using (StreamWriter sw = new StreamWriter("xcopy.bat"))
-                sw.WriteLine("/c cd Copy_to_SD & xcopy /E /I wiiu " + drive + " & xcopy /E /I haxchi " + drive + " & xcopy /E /I cbhc " + drive + " & exit");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
-            Process process = Process.Start("CMD.exe","/c start xcopy.bat");
+            Process process = Process.Start("CMD.exe", "/c robocopy /E Copy_to_SD "+drive+" & exit");
             process.WaitForExit();
             Console.WriteLine("Complete. Exiting.");
             Thread.Sleep(5000);
